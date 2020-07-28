@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DFC9A45124D04D27002A3378 /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC9A45024D04D27002A3378 /* AsyncImageView.swift */; };
 		DFCB99B924BE332700383AC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCB99B824BE332700383AC5 /* AppDelegate.swift */; };
 		DFCB99BB24BE332700383AC5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCB99BA24BE332700383AC5 /* SceneDelegate.swift */; };
 		DFCB99BD24BE332700383AC5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCB99BC24BE332700383AC5 /* MainViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DFC9A45024D04D27002A3378 /* AsyncImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
 		DFCB99B524BE332700383AC5 /* SampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFCB99B824BE332700383AC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DFCB99BA24BE332700383AC5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +47,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DFC9A44D24D04D0A002A3378 /* Various */ = {
+			isa = PBXGroup;
+			children = (
+				DFC9A45024D04D27002A3378 /* AsyncImageView.swift */,
+			);
+			path = Various;
+			sourceTree = "<group>";
+		};
 		DFCB99AC24BE332700383AC5 = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +74,7 @@
 		DFCB99B724BE332700383AC5 /* SampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				DFC9A44D24D04D0A002A3378 /* Various */,
 				DFCB99E224C494E800383AC5 /* Controllers */,
 				DFCB99DE24C4916F00383AC5 /* Networking */,
 				DFCB99D224C0842F00383AC5 /* Cells */,
@@ -194,6 +205,7 @@
 				DFCB99B924BE332700383AC5 /* AppDelegate.swift in Sources */,
 				DFCB99BB24BE332700383AC5 /* SceneDelegate.swift in Sources */,
 				DFCB99CD24BF754200383AC5 /* NetworkManager.swift in Sources */,
+				DFC9A45124D04D27002A3378 /* AsyncImageView.swift in Sources */,
 				DFCB99D424C086AA00383AC5 /* PictureCell.swift in Sources */,
 				DFCB99D624C086B300383AC5 /* SelectorCell.swift in Sources */,
 				DFCB99D124C079B900383AC5 /* HzCell.swift in Sources */,

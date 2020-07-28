@@ -15,8 +15,8 @@ class PictureCell: UICollectionViewCell {
 		setupCell()
 	}
 
-	lazy var imageView: UIImageView = {
-		let imageView = UIImageView()
+	lazy var imageView: AsyncImageView = {
+		let imageView = AsyncImageView()
 		imageView.contentMode = .scaleAspectFit
 		imageView.translatesAutoresizingMaskIntoConstraints = false
 		return imageView

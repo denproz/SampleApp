@@ -149,10 +149,10 @@ class MainViewController: UICollectionViewController {
 			cell.textLabel.text = data.text
 			return cell
 		} else if type == ViewTypes.picture.rawValue {
-			if let url = data.url, let imageUrl = URL(string: url), let imageData = try? Data(contentsOf: imageUrl) {
+			if let url = data.url, let imageUrl = URL(string: url) {
 				guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellId.pictureCellId, for: indexPath) as? PictureCell else { fatalError() }
 				cell.textLabel.text = data.text
-				cell.imageView.image = UIImage(data: imageData)
+				cell.imageView.loadImage(from: imageUrl)
 				return cell
 			}
 		} else if type == ViewTypes.selector.rawValue {
@@ -164,6 +164,8 @@ class MainViewController: UICollectionViewController {
 				cell.picker.selectRow(initialPosition, inComponent: 0, animated: true)
 			}
 			return cell
+		} else {
+			print("Unexpected type...")
 		}
 		return UICollectionViewCell()
 	}
@@ -198,7 +200,6 @@ extension MainViewController: UIPickerViewDelegate, UIPickerViewDataSource {
 		selectedVariant = variants[row].id
 		
 		print("Инициатор вызова — selector c id: \(selectedVariant)")
-		
 	}
 	
 	func pickerView(_ pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
